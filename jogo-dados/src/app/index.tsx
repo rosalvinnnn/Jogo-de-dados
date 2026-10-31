@@ -6,8 +6,8 @@ import {
   Pressable,
   StyleSheet,
   ScrollView,
-  StatusBar,
 } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 const dados = [
   require("../../assets/1.jpg"),
@@ -139,7 +139,7 @@ export default function Index() {
 
   return (
     <View style={styles.tela}>
-      <StatusBar barStyle="light-content" backgroundColor="#101827" />
+      <StatusBar style="light"/>
 
       <ScrollView contentContainerStyle={styles.conteudo}>
         <Text style={styles.titulo}>🎲 JOGO DE DADOS</Text>
